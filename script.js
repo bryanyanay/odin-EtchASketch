@@ -8,8 +8,12 @@ function createGrid() {
     }
 
     for (let cell of grid.children) {
-        cell.classList.add("grid-cell");
+        cell.classList.add("grid-cell"); // add the class for styling
+        cell.addEventListener("mouseenter", (e) => { // add colouring effect
+            e.target.style.backgroundColor = "black";
+        });
     }
 }
 
 createGrid();
+
