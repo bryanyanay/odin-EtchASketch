@@ -9,3 +9,8 @@
 .grid-cell {
     border: 1px solid red;
 }
+
+#create-grid {
+    margin: 30px;
+    font-size: 20px;
+}
