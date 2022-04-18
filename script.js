@@ -1,9 +1,10 @@
 
 
-function createGrid() {
+function createGrid(dim) {
     let grid = document.getElementById("grid");
 
-    for (let i = 0; i < 16*16; i++) {
+    grid.style.gridTemplateColumns = `repeat(${dim}, 1fr)`;
+    for (let i = 0; i < dim*dim; i++) {
         grid.appendChild(document.createElement("div"));
     }
 
@@ -15,5 +16,5 @@ function createGrid() {
     }
 }
 
-createGrid();
+createGrid(16);
 
