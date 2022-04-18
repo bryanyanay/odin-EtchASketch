@@ -16,5 +16,20 @@ function createGrid(dim) {
     }
 }
 
-createGrid(16);
+function getDimensions() {
+    let dim = +prompt("Enter new grid dimensions (<= 100):");
+    while (dim > 100) {
+        dim = prompt("That number was too big. Enter a number <= 100:");
+    } 
+    return dim;
+}
+
+function resetGrid() {
+    let grid = document.getElementById("grid");
+    grid.textContent = ""; // removes all children, repalces with an empty text node
+
+    createGrid(getDimensions());
+}
+
+document.getElementById("create-grid").addEventListener("click", resetGrid);
 
