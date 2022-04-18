@@ -4,10 +4,12 @@
 
     width: 500px;
     height: 500px;
+
+    border: 5px outset grey;
 }
 
 .grid-cell {
-    border: 1px solid red;
+    border: 0.5px solid lightgrey;
 }
 
 #create-grid {
