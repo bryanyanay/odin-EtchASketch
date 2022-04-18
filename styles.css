@@ -1,0 +1,13 @@
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    width: min-content; /* prevents the grid from stretching horizontally and having its columns separate */
+}
+
+.grid-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+}
